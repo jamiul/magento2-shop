@@ -12,21 +12,7 @@
 <script type="text/x-magento-init">
 {
     "*": {
-        "Magento_Ui/js/core/app": {
-            "components": {
-                "todo": {
-                    "component": "MyShop_Todo/js/view/todo",
-                    "template": "MyShop_Todo/todo",
-                    "tasks": [
-                        {"label": "Task A"},
-                        {"label": "Task B"},
-                        {"label": "Task C"}
-                    ]
-
-                }
-            }
-        }
-
+        "Magento_Ui/js/core/app": <?= $block->getJsLayout(); ?>
     }
 }
 </script>
